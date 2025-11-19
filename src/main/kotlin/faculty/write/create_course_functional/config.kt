@@ -11,8 +11,9 @@ import org.axonframework.modelling.annotation.InjectEntity
 
 /**
  * Pure function without enclosing type.
+ * The handler
  */
-@CommandHandler(commandName = "CreateCourse", payloadType = CreateCourse::class, routingKey = CreateCourse.ID)
+@CommandHandler(commandName = "faculty.CreateCourse", payloadType = CreateCourse::class, routingKey = CreateCourse.ID)
 internal fun handle(command: CreateCourse, @InjectEntity(idProperty = CreateCourse.ID) state: CreateCourseState, eventAppender: EventAppender) {
   eventAppender.append(state.decide(command))
 }

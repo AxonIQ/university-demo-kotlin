@@ -6,6 +6,9 @@ import org.axonframework.eventsourcing.annotation.EventSourcedEntity
 import org.axonframework.eventsourcing.annotation.EventSourcingHandler
 import org.axonframework.eventsourcing.annotation.reflection.EntityCreator
 
+/**
+ * Classic mutable entity-based command model.
+ */
 @EventSourcedEntity(tagKey = COURSE)
 internal class CreateCourseState @EntityCreator constructor() {
 
