@@ -34,7 +34,7 @@
     <!-- endregion [dependencies-main] -->
 
     <!-- region [dependencies-test] -->
-    <assertj.version>3.27.6</assertj.version>
+    <assertj.version>3.27.7</assertj.version>
     <awaitility.version>4.3.0</awaitility.version>
     <hamcrest.version>3.0</hamcrest.version>
     <junit.version>5.12.1</junit.version>
